@@ -12,12 +12,12 @@ body {
 
 @font-face {
     font-family: "monument-medium";
-    src: url("./fonts/ABCMonumentGrotesk-Medium-Trial.ttf");
+    src: url("/fonts/ABCMonumentGrotesk-Medium-Trial.ttf");
 }
 
 @font-face {
     font-family: "monument-regular";
-    src: url("./fonts/ABCMonumentGrotesk-Regular-Trial.ttf");
+    src: url("/fonts/ABCMonumentGrotesk-Regular-Trial.ttf");
 }
 
 .monu-medium {
