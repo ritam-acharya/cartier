@@ -8,3 +8,37 @@ body {
     padding: 0;
     box-sizing: border-box;
 }
+
+
+@font-face {
+    font-family: "monument-medium";
+    src: url("./ABCMonumentGrotesk-Medium-Trial.otf");
+}
+
+@font-face {
+    font-family: "monument-regular";
+    src: url("./ABCMonumentGrotesk-Regular-Trial.otf");
+}
+
+.monu-medium {
+    font-family: 'monument-medium';
+}
+
+.monu-regular {
+    font-family: 'monument-regular';
+}
+
+
+.perspective {
+    transform-style: preserve-3d;
+    perspective: 120px;
+    perspective-origin: bottom;
+}
+
+.perspective-button {
+  transform-style: preserve-3d;
+
+  p:nth-child(2) {
+    transform: rotateX(90deg);
+  }
+}
