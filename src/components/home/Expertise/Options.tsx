@@ -10,7 +10,7 @@ const options = [
 
 const Options = ({currentOption, setCurrentOption}: {currentOption: number, setCurrentOption: React.Dispatch<React.SetStateAction<number>>}) => {
   return (
-    <div className="options h-auto lg:h-[420px]  w-full flex flex-col lg:flex-row lg:justify-between gap-4 md:gap-6 lg:gap-10">
+    <div className="options h-auto lg:h-[510px]  w-full flex flex-col lg:flex-row lg:justify-between gap-4 md:gap-6 lg:gap-10">
                 <div className="left-part h-full w-full lg:w-[24%]  flex flex-col justify-between  ">
                     <h4 className="monu-medium text-[38px] md:text-[50px] lg:text-[65px] text-black tracking-tight leading-[35px] md:leading-[48px] lg:leading-[62px]  ">Expertise</h4>
                     <p className="hidden lg:block text-[18px] monu-regular leading-[20px] text-black/70 ">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The best decisions are made when you ask the right questions. By thoroughly exploring your challenges and business objectives, you can develop strategies that consistently deliver results. Guaranteed.</p>
