@@ -20,6 +20,15 @@ body {
     src: url("/fonts/ABCMonumentGrotesk-Regular-Trial.ttf");
 }
 
+@font-face {
+    font-family: "monument-bold";
+    src: url("/fonts/ABCMonumentGrotesk-Bold-Trial.otf");
+}
+
+.monu-bold {
+    font-family: 'monument-bold';
+}
+
 .monu-medium {
     font-family: 'monument-medium';
 }

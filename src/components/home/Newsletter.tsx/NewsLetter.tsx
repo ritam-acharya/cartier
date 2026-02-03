@@ -2,7 +2,7 @@
 
 const NewsLetter = () => {
   return (
-    <div className="w-full h-auto bg-[#D0FF71] text-black py-8 md:py-12 lg:py-20 flex flex-col lg:flex-row justify-start lg:justify-between gap-10 px-4 md:px-8 lg:px-16 ">
+    <div className="w-full h-auto bg-[#D0FF71] text-black py-8 md:py-12 lg:py-20 flex flex-col lg:flex-row justify-start lg:justify-between gap-10 px-4 md:px-8 lg:px-16 relative z-10 ">
         <div className="left w-full lg:w-[65%] h-auto relative  ">
             <div className="w-full h-auto flex flex-col gap-6 ">
                 <p className="text-[16px] md:text-[18px] lg:text-[20px] max-w-[50%] md:max-w-[45%] leading-[16px] md:leading-[18px] lg:leading-[20px] tracking-tight monu-regular ">Latest trends, inspiring ideas, innovation and technologies.</p>

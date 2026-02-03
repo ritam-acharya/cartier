@@ -30,7 +30,7 @@ const Hero = () => {
 
     const opacity = useTransform(scrollYProgress, [0,1], [1,0]);
     return (
-        <div ref={parentContainer} className="bg-[#010202] w-full h-auto relative  ">
+        <div ref={parentContainer} className="bg-[#010202] w-full h-auto relative z-10 ">
             {/**  header  */}
             <Header container={container} />
             <div className=" w-full h-auto md:h-[130vh]   relative flex flex-col justify-between pt-24 md:pt-10 ">

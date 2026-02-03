@@ -37,7 +37,7 @@ const Achievements = () => {
     const perspectiveTextRef = useRef<HTMLDivElement>(null);
     const isInView = useInView(perspectiveTextRef, { once: true });
     return (
-        <div className="h-auto w-full bg-[#FFFFFF] text-black py-8 md:py-12 lg:py-20 px-4 md:px-8 lg:px-16 ">
+        <div className="h-auto w-full bg-[#FFFFFF] text-black py-8 md:py-12 lg:py-20 px-4 md:px-8 lg:px-16 relative z-10 ">
             <div className="flex items-center md:items-start justify-between lg:justify-end gap-4 md:gap-6 lg:gap-10">
                 <div ref={perspectiveTextRef} className="h-auto w-auto overflow-hidden  perspective-button ">
                     <motion.h1 
