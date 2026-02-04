@@ -2,7 +2,7 @@ import RightPart from "./RightPart"
 
 const Culture = () => {
   return (
-    <div className="h-[120vh] w-full relative bg-white  text-black py-8 md:py-12 lg:py-20 flex flex-col lg:flex-row justify-start gap-4 md:gap-6 lg:gap-10 px-4 md:px-8 lg:px-0 z-10 ">
+    <div className="h-[120vh] w-full relative bg-white  text-black py-8 md:py-12 lg:py-20 flex flex-col lg:flex-row justify-start gap-4 md:gap-6 lg:gap-10 px-4 md:px-8 lg:px-0 z-[4] ">
       <div className="left h-[80vh]  md:h-auto w-[75%] lg:w-auto flex items-center justify-center overflow-hidden">
         <img src="/images/culture-img1.webp" alt="image1" className="h-full w-full object-cover" />
       </div>

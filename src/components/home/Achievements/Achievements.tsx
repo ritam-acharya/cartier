@@ -1,52 +1,16 @@
-import { useRef } from "react";
 import Perspective from "../../PerspectiveText";
 import VideoWrapper from "./VideoWrapper";
-import { motion, useInView } from "framer-motion";
+import AnimatedText from "../../AnimatedText";
 
-const perspectiveText = {
-    initial: {
-        opacity: 0,
-        translateY: 40,
-        translateX: -10,
-        rotateX: 90
-    },
-    animate: {
-        opacity: 1,
-        translateY: 0,
-        translateX: 0,
-        rotateX: 0,
-        transition: {
-            delay: 0.25,
-            duration: 0.5,
-            ease: [0.64, 0, 0.24, 1] as const
-        }
-    },
-    exit: {
-        opacity: 0,
-        translateY: 40,
-        translateX: -10,
-        rotateX: 90,
-        transition: {
-            duration: 0.5,
-            ease: [0.64, 0, 0.24, 1] as const
-        }
-    }
-}
+
 
 const Achievements = () => {
-    const perspectiveTextRef = useRef<HTMLDivElement>(null);
-    const isInView = useInView(perspectiveTextRef, { once: true });
     return (
-        <div className="h-auto w-full bg-[#FFFFFF] text-black py-8 md:py-12 lg:py-20 px-4 md:px-8 lg:px-16 relative z-10 ">
+        <div className="h-auto w-full bg-[#FFFFFF] text-black py-8 md:py-12 lg:py-20 px-4 md:px-8 lg:px-16 relative z-[4] overflow-hidden">
             <div className="flex items-center md:items-start justify-between lg:justify-end gap-4 md:gap-6 lg:gap-10">
-                <div ref={perspectiveTextRef} className="h-auto w-auto overflow-hidden  perspective-button ">
-                    <motion.h1 
-                    variants={perspectiveText}
-                    initial="initial"
-                    animate={isInView ? "animate" : "initial"}
-                    exit="exit"
-                    className="text-[22px] md:text-[65px] lg:text-[100px] monu-medium overflow-hidden  ">Achievements</motion.h1>
-                </div>
+                <AnimatedText>
+                    <span className="text-[24px] md:text-[66px] lg:text-[108px] leading-[24px] md:leading-[65px] lg:leading-[108px]">Achievements</span>
+                </AnimatedText>
                 <div className="monu-regular bg-[#D0FF71] h-[40px] w-[120px] cursor-pointer rounded-[25px]  ">
                     <Perspective lable="See more" />
                 </div>
